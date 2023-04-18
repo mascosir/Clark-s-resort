@@ -186,6 +186,7 @@ a {
   width: 400px;
   height: 300px;
   position: relative;
+  cursor: pointer;
 }
 .featurecard > img {
   width: 100%;
@@ -216,6 +217,12 @@ a {
   font-family: "Fasthand", cursive;
   text-transform: uppercase;
 }
+@media screen and (max-width: 720px) {
+  .featurecard > div > p {
+    font-size: 16px;
+  }
+}
+
 .forminput {
   width: 100%;
 }

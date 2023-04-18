@@ -4,7 +4,7 @@ const index = () => {
   return (
     <div className="w-full px-[40px] mb-12">
       <div className="container">
-        <h1 className="text-center uppercase font-bold text-[26px] text-[#272727]">
+        <h1 className="text-center sm:text-sm  uppercase font-bold md:text-[26px] text-[#272727]">
           Location
         </h1>
       </div>

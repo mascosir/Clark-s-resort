@@ -5,7 +5,7 @@ const Gallery = () => {
     <div className="galleryname" id="gallery">
       <div className="Indexmain">
         <div className="container">
-          <h1 className="text-center uppercase font-bold text-[26px] text-[#272727]">
+          <h1 className="text-center sm:text-sm  uppercase font-bold md:text-[26px] text-[#272727]">
             Gallery
           </h1>
         </div>

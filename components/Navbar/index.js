@@ -134,11 +134,24 @@ function ResponsiveAppBar() {
                     <i className="bx bxs-map text-black pr-1 " />
                     Gandak, Bahuwri-14, Birgung, Nepal
                   </span>
-                  <span className="text-black">
-                    <i className="bx bxl-facebook px-1 " />
+                  <span className="text-black cursor-pointer">
+                    <i
+                      onClick={() =>
+                        window.open(
+                          "https://www.facebook.com/clarksresort/",
+                          "_blank"
+                        )
+                      }
+                      className="bx bxl-facebook px-1 "
+                    />
                     <i className="bx bxl-twitter px-1 " />
                     <i className="bx bxl-instagram px-1 " />
-                    <i className="bx bx-envelope px-1 " />
+                    <i
+                      onClick={() =>
+                        window.open("mailto:shahamit756@gmail.com", "_blank")
+                      }
+                      className="bx bx-envelope px-1 "
+                    />
                     <i className="bx bx-spa px-1 " />
                   </span>
                 </div>

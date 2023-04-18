@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -22,6 +23,7 @@ const Feature = () => {
       items: 1,
     },
   };
+  const router = useRouter();
   return (
     <div className="facilitymain" id="facility">
       <div className="Indexmain">
@@ -50,7 +52,10 @@ const Feature = () => {
             renderDotsOutside={false}
             className="pb-6"
           >
-            <div className="featurecard">
+            <div
+              className="featurecard"
+              onClick={() => router.push(`/facility/reception`)}
+            >
               <img src="\reception.jpg"></img>
               <div>
                 <p>Main reception</p>
