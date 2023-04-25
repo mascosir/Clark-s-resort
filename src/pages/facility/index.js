@@ -6,20 +6,49 @@ const Index = () => {
   const router = useRouter();
   const card = [
     {
-      title: "room",
-      img: "./1.jpg",
+      link: "Main Reception",
+      name: "Main Reception",
+      img: "/reception.jpg",
       desc: `Explore the art and architecture of the medieval centres of
-  Kathmandu, and experience the luxury of staying in an
-  award-winning ‘living museum’. Then escape to the country, and
-  take in the infinite`,
+      Kathmandu, and experience the luxury of staying in an
+      award-winning ‘living museum’. Then escape to the country, and
+      take in the infinite`,
     },
     {
-      title: "spa",
-      img: "./2.jpg",
+      link: "Swimming",
+      name: "Swimming",
+      img: "/swim.jpg",
       desc: `Explore the art and architecture of the medieval centres of
-    Kathmandu, and experience the luxury of staying in an
-    award-winning ‘living museum’. Then escape to the country, and
-    take in the infinite`,
+      Kathmandu, and experience the luxury of staying in an
+      award-winning ‘living museum’. Then escape to the country, and
+      take in the infinite`,
+    },
+    {
+      link: "Gym",
+      name: "Gym",
+      img: "/gym.jpeg",
+      desc: `Explore the art and architecture of the medieval centres of
+      Kathmandu, and experience the luxury of staying in an
+      award-winning ‘living museum’. Then escape to the country, and
+      take in the infinite`,
+    },
+    {
+      link: "Jungle Walk",
+      name: "Jungle Walk",
+      img: "/walk.jpg",
+      desc: `Explore the art and architecture of the medieval centres of
+      Kathmandu, and experience the luxury of staying in an
+      award-winning ‘living museum’. Then escape to the country, and
+      take in the infinite`,
+    },
+    {
+      link: "Casino",
+      name: "Casino",
+      img: "/casino.jpg",
+      desc: `Explore the art and architecture of the medieval centres of
+      Kathmandu, and experience the luxury of staying in an
+      award-winning ‘living museum’. Then escape to the country, and
+      take in the infinite`,
     },
   ];
   return (
@@ -61,7 +90,7 @@ const Index = () => {
                       color: "#fff",
                     },
                   }}
-                  onClick={() => router.push(`/facility/${item.title}`)}
+                  onClick={() => router.push(`/facility/${item.link}`)}
                 >
                   load more
                 </Button>

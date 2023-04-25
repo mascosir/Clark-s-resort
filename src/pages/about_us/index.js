@@ -8,7 +8,7 @@ const Index = () => {
           About Us
         </h1>
       </div>
-      <div className="flex justify-between gap-20 items-center flex-col-reverse md:flex-row ">
+      <div className="flex justify-between gap-8 items-center flex-col-reverse md:flex-row pb-12 px-12 ">
         <p className="text-justify flex justify-center items-center px-8">
           Popularly known as the ‘Gateway to Nepal’, Birgunj is a metropolitan
           city in southern Nepal. Home to several industries and religious
@@ -23,8 +23,12 @@ const Index = () => {
           Whether you visit Birgunj for business or leisure, our resort will
           sweep you off your feet!
         </p>
-        <div className="flex justify-center items-center px-8">
-          <img src="\about.jpg"></img>
+        <div className="flex justify-center items-center px-8 overflow-hidden">
+          <img
+            className="hover:scale-[1.3] transition-all ease duration-[0.6s]"
+            alt=""
+            src="\about.jpg"
+          ></img>
         </div>
       </div>
     </div>

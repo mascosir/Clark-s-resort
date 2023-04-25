@@ -53,11 +53,11 @@ function BookingForm() {
     //   myForm.addEventListener("submit", handleSubmit);
   };
   return (
-    <div className="min-w-screen min-h-screen relative">
-      <div className="w-full min-h-[600px] h-full p-[20px] md:p-[40px] md:pt-44 flex justify-center items-center pt-4">
+    <div className="w-full md:min-h-screen relative flex flex-col justify-between items-center md:flex-row md:p-12">
+      <div className="md:w-[70%] min-h-[400px] h-full p-[20px] w-full md:p-[40px] md:pt-44 mt-6 flex justify-center items-center pt-4">
         <form
           onSubmit={handleSubmit}
-          className="flex w-[400px] flex-col gap-[10px] shadow-xl p-4 bg-gray-500"
+          className="flex w-[400px] flex-col gap-[10px] shadow-xl p-4 bg-gray-100"
         >
           <div className="success"> {success}</div>
 
@@ -144,6 +144,29 @@ function BookingForm() {
             Book Now
           </Button>
         </form>
+      </div>
+      <div className="flex h-full w-full items-center bg-gray-100 md:w-[30%] shadow-xl">
+        <div className="max-w-max p-5 ">
+          <span className=" text-sm text-cyan-600 flex flex-col ">
+            <span>
+              {" "}
+              <i className="bx bx-wifi px-3 " />
+              Free wifi
+            </span>
+            <span>
+              <i className="bx bxs-t-shirt px-3 " />
+              laundry Servics
+            </span>
+            <span>
+              <i className="bx bxs-hotel px-3 " />
+              Room
+            </span>
+            <span>
+              <i className="bx bx-food-tag px-3 " />
+              Free Breakfast
+            </span>
+          </span>
+        </div>
       </div>
     </div>
   );
