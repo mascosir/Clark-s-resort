@@ -42,9 +42,9 @@ const Feature = ({ currentfacility, viewmore }) => {
       img: "/gym.jpeg",
     },
     {
-      link: "Jungle Walk",
-      name: "Jungle Walk",
-      img: "/walk.jpg",
+      link: "Room",
+      name: "Room",
+      img: "/4.jpg",
     },
     {
       link: "Casino",
@@ -53,13 +53,13 @@ const Feature = ({ currentfacility, viewmore }) => {
     },
   ];
   return (
-    <div className="facilitymain" id="facility">
+    <div className="facilitymain w-full" id="facility">
       <div className="Indexmain">
         <div className="container">
           {viewmore ? (
             <div className="w-[250px]">
               <h1 className="text-center sm:text-sm  font-bold md:text-[20px] text-[#272727] ">
-                View All Facility
+                View All facility
               </h1>
             </div>
           ) : (

@@ -11,7 +11,7 @@ const index = () => {
       <div className=" z-10 fixed left-0 top-[40%] w-[40px]">
         <div className="tc">
           <div className=" w-[40px]">
-            <span className="flex flex-col bg-[#7ba6ad] w-9 text-[25px] py-2 cursor-pointer">
+            <span className="flex flex-col bg-[#36393a] w-9 text-[25px] py-2 cursor-pointer">
               <i
                 onClick={() =>
                   window.open(
@@ -19,9 +19,9 @@ const index = () => {
                     "_blank"
                   )
                 }
-                className="bx bxl-facebook text-black px-1 "
+                className="bx bxl-facebook text-white px-1 "
               />
-              <i className="bx bxl-twitter text-black px-1 " />
+              <i className="bx bxl-twitter text-white px-1 " />
               <i
                 onClick={() =>
                   window.open(
@@ -29,13 +29,13 @@ const index = () => {
                     "_blank"
                   )
                 }
-                className="bx bxl-instagram text-black px-1 "
+                className="bx bxl-instagram text-white px-1 "
               />
               <i
                 onClick={() =>
                   window.open("mailto:shahamit756@gmail.com", "_blank")
                 }
-                className="bx bx-envelope text-black px-1 "
+                className="bx bx-envelope text-white px-1 "
               />
               <i
                 onClick={() =>
@@ -44,7 +44,7 @@ const index = () => {
                     "_blank"
                   )
                 }
-                className="bx bx-spa text-black px-1 "
+                className="bx bx-spa text-white px-1 "
               />
             </span>
           </div>

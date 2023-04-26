@@ -36,41 +36,37 @@ const index = () => {
       Kathmandu, and experience the luxury of staying in an
       award-winning ‘living museum’. Then escape to the country, and
       take in the infinite`,
-      service: [
-        {
-          name: "Main Reception",
-          img: "/reception.jpg",
-          desc: `Explore the art and architecture of the medieval centres of
-      Kathmandu, and experience the luxury of staying in an
-      award-winning ‘living museum’. Then escape to the country, and
-      take in the infinite`,
-        },
-        {
-          name: "Main Reception",
-          img: "/reception.jpg",
-          desc: `Explore the art and architecture of the medieval centres of
-    Kathmandu, and experience the luxury of staying in an
-    award-winning ‘living museum’. Then escape to the country, and
-    take in the infinite`,
-        },
-        {
-          name: "Main Reception",
-          img: "/reception.jpg",
-          desc: `Explore the art and architecture of the medieval centres of
-  Kathmandu, and experience the luxury of staying in an
-  award-winning ‘living museum’. Then escape to the country, and
-  take in the infinite`,
-        },
-      ],
     },
     {
-      link: "Jungle Walk",
-      name: "Jungle Walk",
-      img: "/walk.jpg",
+      link: "Room",
+      name: "Room",
+      img: "/4.jpg",
       desc: `Explore the art and architecture of the medieval centres of
       Kathmandu, and experience the luxury of staying in an
       award-winning ‘living museum’. Then escape to the country, and
       take in the infinite`,
+      service: [
+        {
+          price: "RS.200/night",
+          name: "Deluxe Rooms",
+          img: "/1.jpg",
+          desc: `The Deluxe Rooms at Clarks Resort are spread across an area of 402 sq. ft., and feature fine interiors as well as mellow lighting, for a relaxed stay in Birgunj.`,
+        },
+        {
+          price: "RS.200/night",
+          name: "Executive Rooms",
+          img: "/2.jpg",
+          desc: `Curated with fine interiors and classy decor, our 518 sq. ft. Executive Rooms are the perfect accommodations for both leisure and corporate travellers.
+          `,
+        },
+        {
+          price: "RS.200/night",
+          name: "Suites",
+          img: "/3.jpg",
+          desc: `The Suites at Clarks Resort, Birgunj are classy accommodations spanning 554 sq. ft. These suites can easily shelter a total of 4 guests in comfort.
+          `,
+        },
+      ],
     },
     {
       link: "Casino",
@@ -105,8 +101,11 @@ const index = () => {
       {title && currentdata.service && (
         <div className="w-full min-h-[300px] flex-col flex justify-between md:flex-row p-[20px]">
           {currentdata.service?.map((sc) => (
-            <Card sx={{ maxWidth: 345 }}>
+            <Card sx={{ maxWidth: 345, position: "relative" }}>
               <CardMedia sx={{ height: 140 }} image={sc.img} title={sc.name} />
+              <div className="absolute top-3 left-0 px-2 py-[4px] bg-red-500 text-white rounded-tr-[10px] rounded-br-[10px] text-[12px] opacity-80 z-10">
+                {sc.price}
+              </div>
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   {sc.name}
@@ -116,7 +115,10 @@ const index = () => {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button onClick={(e) => router.push(`/booking`)} size="small">
+                <Button
+                  onClick={(e) => router.push(`/booking?roomtype=${sc.name}`)}
+                  size="small"
+                >
                   Book Now
                 </Button>
               </CardActions>

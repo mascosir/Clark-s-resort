@@ -43,7 +43,7 @@ function ResponsiveAppBar() {
     setAnchorElUser(null);
   };
   return (
-    <AppBar position="fixed" sx={{ bgcolor: "#7ba6ad" }}>
+    <AppBar position="fixed" sx={{ bgcolor: "#39393a" }}>
       <Container maxWidth="xl">
         <Toolbar
           disableGutters
@@ -101,15 +101,15 @@ function ResponsiveAppBar() {
               onClick={() => window.open("/", "_self")}
             ></img>
             <Link href="/booking">
-              <button className="uppercase border border-black px-3 py-1">
+              <button className="uppercase border border-white px-3 py-1">
                 Book now
               </button>
             </Link>
           </Box>
-          <div className=" flex-col w-full text-black hidden md:flex">
+          <div className=" flex-col w-full text-white hidden md:flex">
             <div className="text-center mb-4 pt-2 hidden sm:block">
               <span className="uppercase text-[16px] flex justify-center items-center">
-                <i className="bx bxs-paint text-black px-1 " />
+                <i className="bx bxs-paint text-white px-1 " />
                 Travels update
                 <i
                   onClick={() =>
@@ -118,7 +118,7 @@ function ResponsiveAppBar() {
                       "_blank"
                     )
                   }
-                  className="bx bx-right-arrow-alt text-black px-1 cursor-pointer "
+                  className="bx bx-right-arrow-alt text-white px-1 cursor-pointer "
                 />
               </span>
             </div>
@@ -133,16 +133,16 @@ function ResponsiveAppBar() {
               </div>
 
               <div className="w-full text-[13px] ">
-                <div className="border-b-[1px] border-gray-300 pb-1 hidden sm:block">
-                  <span className="border-r-2 border-black px-2">
-                    <i className="bx bxs-phone text-black px-1 " />
+                <div className="border-b-[1px] border-yellow-800 pb-1 hidden sm:block">
+                  <span className="border-r-2 border-white px-2">
+                    <i className="bx bxs-phone text-white px-1 " />
                     +977 9802310555
                   </span>
-                  <span className="border-r-2 border-black px-2">
-                    <i className="bx bxs-map text-black pr-1 " />
+                  <span className="border-r-2 border-white px-2">
+                    <i className="bx bxs-map text-white pr-1 " />
                     Gandak, Bahuwri-14, Birgung, Nepal
                   </span>
-                  <span className="text-black cursor-pointer">
+                  <span className="text-white cursor-pointer">
                     <i
                       onClick={() =>
                         window.open(
@@ -183,6 +183,7 @@ function ResponsiveAppBar() {
                   <Box
                     sx={{
                       flexGrow: 0,
+                      padding: "5px 0",
                       display: { xs: "none", md: "flex", alignItems: "center" },
                     }}
                   >
@@ -190,11 +191,15 @@ function ResponsiveAppBar() {
                       <Button
                         key={page.title}
                         onClick={handleCloseNavMenu}
-                        sx={{ color: "white", display: "block" }}
+                        sx={{
+                          padding: "0 8px",
+                          color: "white",
+                          display: "block",
+                        }}
                       >
                         <Link
                           href={`/${page.link}`}
-                          className="text-[13px] text-black"
+                          className="text-[13px] text-white"
                         >
                           {page.title}
                         </Link>
@@ -203,7 +208,7 @@ function ResponsiveAppBar() {
                   </Box>
 
                   <Link href="/booking">
-                    <button className="uppercase border border-black px-3 py-1">
+                    <button className="uppercase border border-white px-3 py-1">
                       Book now
                     </button>
                   </Link>

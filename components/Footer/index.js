@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div>
       <div className="footermain " id="contact">
-        <div className="flex flex-row item-center justify-between w-full gap-5">
+        <div className="flex flex-row item-center justify-between  w-full gap-5">
           <div className=" flex justify-center items-center">
             <img
               className="z-10 "
@@ -13,15 +13,15 @@ const Footer = () => {
               onClick={() => window.open("/", "_self")}
             ></img>
           </div>
-          <div>
+          <div className="text-white">
             <h1>Contact Us</h1>
             <div className=" pb-1 flex flex-col ">
               <span className="">
-                <i className="bx bxs-phone text-black px-1 " />
+                <i className="bx bxs-phone text-white px-1 " />
                 +977 9802310555
               </span>
               <span>
-                <i className="bx bxs-map text-black pr-1 " />
+                <i className="bx bxs-map text-white pr-1 " />
                 Gandak, Bahuwri-14,
               </span>
               <span>Birgung, Nepal</span>
@@ -50,9 +50,9 @@ const Footer = () => {
             onClick={() =>
               window.open("https://www.facebook.com/clarksresort/", "_blank")
             }
-            className="bx bxl-facebook px-1 "
+            className="bx bxl-facebook px-1 cursor-pointer "
           />
-          <i className="bx bxl-twitter px-1 " />
+          <i className="bx bxl-twitter px-1 cursor-pointer " />
           <i
             onClick={() =>
               window.open(
@@ -60,7 +60,7 @@ const Footer = () => {
                 "_blank"
               )
             }
-            className="bx bxl-instagram px-1 "
+            className="bx bxl-instagram px-1 cursor-pointer "
           />
           <i
             onClick={() =>
@@ -69,7 +69,7 @@ const Footer = () => {
                 "_blank"
               )
             }
-            className="bx bx-envelope px-1 "
+            className="bx bx-envelope px-1 cursor-pointer "
           />
         </span>
       </footer>

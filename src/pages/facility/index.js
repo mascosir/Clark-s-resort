@@ -33,9 +33,9 @@ const Index = () => {
       take in the infinite`,
     },
     {
-      link: "Jungle Walk",
-      name: "Jungle Walk",
-      img: "/walk.jpg",
+      link: "Room",
+      name: "Room",
+      img: "/4.jpg",
       desc: `Explore the art and architecture of the medieval centres of
       Kathmandu, and experience the luxury of staying in an
       award-winning ‘living museum’. Then escape to the country, and
@@ -65,8 +65,8 @@ const Index = () => {
             key={item.title}
           >
             <div className="w-full h-[500px] md:h-[400px] flex ">
-              <div className="w-[40%] h-full bg-[#7ba6ad] md:bg-white "></div>
-              <div className="w-[60%] h-full bg-[#7ba6ad]"></div>
+              <div className="w-[40%] h-full bg-[#6a6a67] md:bg-white "></div>
+              <div className="w-[60%] h-full bg-[#6a6a67]"></div>
             </div>
             <div className="absolute top-0 left-0 w-full h-full gap-[20px] md:gap-[0px] md:p-[40px] flex md:justify-center flex-col md:flex-row">
               <div className="w-[100%] overflow-hidden h-[200px] md:w-[50%] md:h-[100%]">
@@ -77,8 +77,8 @@ const Index = () => {
                 ></img>
               </div>
               <div className="w-[100%] h-[50%] md:w-[50%] md:h-[100%] flex flex-col justify-center items-center gap-5 px-8">
-                <h1 className="sm:text-sm text-center w-full uppercase font-bold md:text-[16px] text-[#272727] ">
-                  {item.title}
+                <h1 className="sm:text-sm text-center w-full uppercase font-bold md:text-[16px] text-white ">
+                  {item.name}
                 </h1>
                 <p>{item.desc}</p>
                 <Button
